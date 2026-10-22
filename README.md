@@ -4,8 +4,9 @@ An analysis of an A/B test run by **Vanguard**, a US investment management compa
 
 **Team Hufflepuff:** Pariya, Pietro, Yurii · Ironhack Data Analytics Bootcamp, Module 2
 
-📊 **Tableau dashboard:** [Tableau Public link – coming soon]
-🎤 **Presentation:** [Google Slides](https://docs.google.com/presentation/d/1qYbaWaDLsKi3lk0Xy46ItwtnvLfmSy2G/edit?usp=sharing&ouid=109599469251149380786&rtpof=true&sd=true)
+- 📊 **Tableau dashboard:** [Tableau Public link – coming soon]
+- 📋 **Project board:** [Trello](https://trello.com/b/7HOtFWhm/hufflepuffteam)
+- 🎤 **Presentation:** [Google Slides](https://docs.google.com/presentation/d/1qYbaWaDLsKi3lk0Xy46ItwtnvLfmSy2G/edit?usp=sharing&ouid=109599469251149380786&rtpof=true&sd=true)
 
 ---
 
@@ -151,6 +152,6 @@ Run `01_data_cleaning.ipynb` first to create the cleaned files, then open any ot
 
 | Name | GitHub |
 |---|---|
-| Pariya |https://github.com/pari14830 |
-| Pietro |https://github.com/pietroguido90-design|
-| Yurii |https://github.com/yurii-slbv  |
+| Pariya | [pari14830](https://github.com/pari14830) |
+| Pietro | [pietroguido90-design](https://github.com/pietroguido90-design) |
+| Yurii | [yurii-slbv](https://github.com/yurii-slbv) |
