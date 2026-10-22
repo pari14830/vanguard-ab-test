@@ -151,6 +151,6 @@ Run `01_data_cleaning.ipynb` first to create the cleaned files, then open any ot
 
 | Name | GitHub |
 |---|---|
-| Pariya | [link] |
+| Pariya |https://github.com/pari14830 |
 | Pietro | [link] |
 | Yurii | [link] |
