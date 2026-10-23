@@ -5,6 +5,7 @@ An analysis of an A/B test run by **Vanguard**, a US investment management compa
 **Team Hufflepuff:** Pariya, Pietro, Yurii · Ironhack Data Analytics Bootcamp, Module 2
 
 - 📊 **Tableau dashboard:** [Tableau Public](https://public.tableau.com/app/profile/pariya.lakani/viz/vanguard_dashboard_final/vanguard_executive_dashboard)
+- 🖥️ **Interactive Streamlit app:** [streamlit_app/](streamlit_app/) (built by Pietro, see [below](#interactive-streamlit-app))
 - 📋 **Project board:** [Trello](https://trello.com/b/7HOtFWhm/hufflepuffteam)
 - 🎤 **Presentation:** [Google Slides](https://docs.google.com/presentation/d/1qYbaWaDLsKi3lk0Xy46ItwtnvLfmSy2G/edit?usp=sharing&ouid=109599469251149380786&rtpof=true&sd=true)
 
@@ -85,10 +86,28 @@ The typical client is **middle-aged (average age about 47)** and a **long-standi
 
 ---
 
+## Interactive Streamlit App
+
+An interactive dashboard built by **Pietro** with **Streamlit** and **Plotly** ([original repo](https://github.com/pietroguido90-design/Streamlit_project_final)).
+
+It lets you filter by **experimental group, age group and gender**, and explore:
+- Completion rate vs. the 5 pp target
+- Funnel conversion by step
+- Navigation flow (Sankey diagram)
+- Time spent per step
+- Error rate by step
+- Drop-off heatmap by age group
+- Two-proportion z-test for completion rate
+
+You can also download the filtered data as a CSV from the sidebar.
+
+---
+
 ## Methods & tools
 
 - **Python:** pandas, numpy (cleaning, merging, KPIs)
-- **Visualization:** matplotlib, seaborn, Tableau
+- **Visualization:** matplotlib, seaborn, Tableau, Plotly
+- **Dashboard app:** Streamlit
 - **Statistics:** scipy, statsmodels
   - Chi-square test of independence (completion rate, gender)
   - Chi-square goodness of fit (group split)
@@ -121,8 +140,12 @@ vanguard-ab-test/
 │   ├── 10_hypothesis_redesign_by_age.ipynb
 │   ├── 11_design_effectiveness.ipynb
 │   └── 12_experiment_duration.ipynb
-└── tableau/
-    └── vanguard-ab-test-dashboard_final.twbx
+├── tableau/
+│   └── vanguard-ab-test-dashboard_final.twbx
+└── streamlit_app/
+    ├── VanguardsAPP.py              # Streamlit dashboard
+    ├── requirements.txt             # packages for the app
+    └── vanguard_tableau_final.csv   # data used by the app
 ```
 
 | Notebooks | What they cover |
@@ -137,14 +160,24 @@ vanguard-ab-test/
 
 ## How to run
 
+### Notebooks
 ```bash
-git clone [repo-link]
+git clone https://github.com/pari14830/vanguard-ab-test.git
 cd vanguard-ab-test
 pip install -r requirements.txt
 jupyter notebook
 ```
 
 Run `01_data_cleaning.ipynb` first to create the cleaned files, then open any other notebook.
+
+### Streamlit app
+```bash
+cd streamlit_app
+pip install -r requirements.txt
+streamlit run VanguardsAPP.py
+```
+
+The app opens in your browser (usually at `http://localhost:8501`).
 
 ---
 
